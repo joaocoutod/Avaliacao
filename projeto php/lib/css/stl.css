@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 850px;
+    height: 100%;
+    padding: 5px;
+}
+@media(max-width: 600px){.col{width: 100%;}}
+
+
+
+/* UTILITARIOS */
+.text-center{text-align: center;}
+.color-danger{color: #fff; background-color:#F93154;}
+.color-primary{color: #fff; background-color:#1266F1;}
+.color-success{color: #fff;  background-color: #00B74A;}
+.btn{
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+/*******************/
+
+
+
+/* FORM DE PRODUTO*/
+.form-produto {  
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.form-produto .group-form{
+    padding: 5px;
+}
+
+.form-produto label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-produto input, .form-produto select{
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-produto button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-produto button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-produto input {
+    margin: 10px 0;
+  }
+  
+  .form-produto {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/*******************/
+
+
+
+/* FORM DE BUSCA */
+form.busca{margin: 10px 0 10px 0;}
+
+form.busca input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 100%;
+}
+
+form.busca::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*******************/
+
+
+
+
+/* TABLE LISTA DE PRODUTOS */
+.listadeprodutos h2{
+    margin: 15px 0 10px 0;
+}
+.listadeprodutos table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.listadeprodutos th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+.listadeprodutos tr.theader {
+  background-color: #f1f1f1;
+}
+
+.listadeprodutos tr.tbody{
+  border-bottom: 1px solid #ddd;
+}
+
+.listadeprodutos tr:nth-child(even) {
+    background-color: #fff;
+    
+}
+/*******************/
+
+
+
+
