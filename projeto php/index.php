@@ -70,7 +70,7 @@ $produtocrd = new ProdutoCRD();
                 <tr class="tbody">
                     <td><?= $produto->getNome() ?></td>
                     <td><?= $produto->getCor() ?></td>
-                    <td>$<?= substr($produto->getPreco(),1) ?></td>
+                    <td>$<?= number_format(substr($produto->getPreco(),1) , 2, ",", ".")?></td>
                     <td class='text-center'>
                         <button class="btn color-success" onclick="document.getElementById('editar><?= $produto->getId() ?>').style.display='block'">
                             Atualizar

@@ -26,7 +26,7 @@ if(isset($_POST['cadastrar'])){
         $desconto = 20; //20% de desconto
         $preco = $d['preco'];
         $resultado = (($desconto * $preco)/100)-$preco;
-        $produto->setPreco(number_format($resultado, 2, ",", "."));
+        $produto->setPreco($resultado);
     }
     
     //Produtos das cores AMARELO, terão um desconto de 10%.
@@ -34,7 +34,7 @@ if(isset($_POST['cadastrar'])){
         $desconto = 10; //10% de desconto
         $preco = $d['preco'];
         $resultado = (($desconto * $preco)/100)-$preco;
-        $produto->setPreco(number_format($resultado, 2, ",", "."));
+        $produto->setPreco($resultado);
     }
 
     //Produtos de cor VERMELHO e com VALOR MAIOR que R$ 50.00.  Será aplicado um desconto de 5%.
@@ -42,7 +42,7 @@ if(isset($_POST['cadastrar'])){
         $desconto = 5; //10% de desconto
         $preco = $d['preco'];
         $resultado = (($desconto * $preco)/100)-$preco;
-        $produto->setPreco(number_format($resultado, 2, ",", "."));
+        $produto->setPreco($resultado);
     }
 
     $produtocrd->create($produto);
